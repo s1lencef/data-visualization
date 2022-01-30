@@ -19,5 +19,4 @@ while(True):
     flag = input('Продолжить? ')
     if flag == 'нет':
         break
-    plt.scatter(args, values, s=150)
     plt.show()
