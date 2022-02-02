@@ -10,7 +10,7 @@ while True:
     plt.scatter(my_rw.x_values, my_rw.y_values, c=numbers, s=15, edgecolor = 'none', cmap = plt.cm.Greens)
     plt.scatter(my_rw.x_values[0], my_rw.y_values[0], c='blue')
     plt.scatter(my_rw.x_values[-1], my_rw.y_values[-1], c='red')
-    # plt.axis('off')
+    plt.axis('off')
     plt.show()
     end = input("Создать еще одно блуждание? (да/нет)")
     if end=='нет':
