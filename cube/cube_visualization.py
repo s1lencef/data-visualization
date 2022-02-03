@@ -1,6 +1,6 @@
 from cube import Cube
 import pygal
-c = Cube(10)
+c = Cube()
 results = [c.roll() for i in range(0, 10000)]
 count =[]
 
