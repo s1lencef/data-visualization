@@ -5,4 +5,3 @@ class Cube():
     def roll(self):
         return randint(1, self.sides)
 
-c = Cube(6)
