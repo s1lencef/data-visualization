@@ -9,22 +9,20 @@ with open(filename) as file:
     headers = next(reader)
     for index, column in enumerate(headers):
         print(index, column)
-    print(headers[1])
     highs = []
     data = []
-    i = 1
-    x_v = []
+
     for row in reader:
         highs.append(int(row[1]))
         current_date = datetime.strptime(row[0], '%Y-%m-%d')
         data.append(current_date)
-        x_v.append(i)
-        i += 1
+
 
     print(data)
     print(highs)
+
     fig = plt.figure(dpi=128, figsize = (10,6))
-    plt.plot(data, highs, color='green')
+    plt.plot(data, highs, color = 'green' )
     plt.title('Максимальные значения температуры \n в каком-то американском Устьурюпинске в июле', fontsize = 16)
     plt.xlabel('Дата', fontsize = 16)
     plt.ylabel('Максимальная температура в фарингейтах', fontsize =14)
